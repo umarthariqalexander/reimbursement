@@ -1,0 +1,23 @@
+{
+  "name": "reimbursement",
+  "version": "1.0.0",
+  "description": "reimbursement project for accounts department of Coviam",
+  "main": "index.js",
+  "scripts": {
+    "start": "rimraf ./public & gulp tasks & node app.js"
+  },
+  "author": "COVIAM PVT LTD",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.2",
+    "angular-route": "^1.7.2",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
