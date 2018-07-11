@@ -16,6 +16,7 @@
         <script src="/scripts/index.js"></script>
         <script src="/scripts/controllers/appHeaderCtrl.js"></script>
         <!-- Directives -->
+        <script src="/scripts/directives/LeftNavigationMenu/index.js"></script>
         <script src="/scripts/directives/headLessDropDown/index.js"></script>
         <script src="/scripts/directives/ProfilePic/index.js"></script>
     </head>
@@ -26,6 +27,10 @@
                 <div class="user-account-options-wrapper">
                     <head-less-drop-down id="'userAccountOptions'" selected="userAccountOptionSelected" items="items"><head-less-drop-down>
                 </div>
+            </div>
+            <left-nav></left-nav>
+            <div class="title-bar">
+                <span class="page-title">Dashboard</span>
             </div>
             <ng-view></ng-view>
         </div>

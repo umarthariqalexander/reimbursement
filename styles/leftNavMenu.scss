@@ -1,0 +1,44 @@
+@import 'colors';
+
+.left-nav-wrapper{
+    height: calc(100% - 66px);
+    position: fixed;
+    z-index: 4;
+    overflow: visible;
+    top: 66px;
+    left: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
+    transition: 0.5s left;
+    ul{
+        list-style: none;
+        padding-left: 0px;
+        li{
+            padding:14px;
+        }
+        li:hover{
+            background-color: $active-option-color;
+            .icon-briefcase{
+                color: white;
+            }
+            .icon-user-tie{
+                color: white;
+            }
+        }
+        li:nth-child(1):hover{
+            background-color: white;
+        }
+    }
+    .icon-briefcase{
+        font-size: 24px;
+        color: #888888;
+    }
+    .icon-user-tie{
+        font-size: 24px;
+        color: #888888;
+    }
+    .icon-home{
+        font-size: 24px;
+        color: #888888;
+    }
+}
