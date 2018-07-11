@@ -3,7 +3,8 @@ angular.module("reimbursement")
     return{
       scope: {
         id: '=id',
-        items: '=items'
+        items: '=items',
+        selected: '&'
       },
       templateUrl: "/scripts/directives/headLessDropDown/index.html",
     }

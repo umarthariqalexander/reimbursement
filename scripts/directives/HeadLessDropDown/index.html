@@ -1,10 +1,13 @@
 <span uib-dropdown on-toggle="toggled(open)">
-    <a href id={{id}} uib-dropdown-toggle>
-        <span class="icon-caret-down"></span>
-    </a>
+    <span uib-dropdown-toggle>
+        <profile-pic letter="'U'" image-url=""></profile-pic>
+        <a href id={{id}} uib-dropdown-toggle>
+            <span class="icon-caret-down"></span>
+        </a>            
+    </span>
     <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
-        <li ng-repeat="choice in items">
-        <a href>{{choice}}</a>
+        <li ng-repeat="choice in items" ng-click="selected()(choice)">
+            <a href>{{choice.desc}}</a>
         </li>
     </ul>
 </span>  

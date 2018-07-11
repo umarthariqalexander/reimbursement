@@ -22,10 +22,9 @@
     <body>
         <div ng-app="reimbursement">
             <div class="top-bar" ng-controller="appHeaderCtrl">
-                <span class="">Welcome to Reimbursement App</span> 
+                <span class="icon-menu"></span> 
                 <div class="user-account-options-wrapper">
-                    <profile-pic letter="'U'" image-url=""></profile-pic>
-                    <head-less-drop-down id="'userAccountOptions'" items="items"><head-less-drop-down>
+                    <head-less-drop-down id="'userAccountOptions'" selected="userAccountOptionSelected" items="items"><head-less-drop-down>
                 </div>
             </div>
             <ng-view></ng-view>
