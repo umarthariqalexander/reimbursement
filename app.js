@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true})); // to support URL-encoded bodi
 // =====================================================================================================
 
 // app.use('/images', express.static('images'));
-// app.use('/styles/icomoonFonts', express.static(path.join(__dirname,'/styles/fonts/')));
+app.use('/styles/icomoonFonts', express.static(path.join(__dirname,'/styles/fonts/')));
 app.use('/styles/', express.static(path.join(__dirname,'/styles/')));
 app.use('/pages', express.static(path.join(__dirname,'/views/pages')));
 app.use('/scripts/', express.static(path.join(__dirname,'/scripts/')));

@@ -1,0 +1,28 @@
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+.icon-caret-down{
+    color: white;
+    font-size: 12px;
+    padding-left: 2px;
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+}
+.dropdown-menu{
+    right: 0 !important;
+    margin-top: 15px !important;
+    padding: 0 !important;
+    left: initial !important;
+    li a{
+        padding: 8px 16px !important;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    li a:last-child{
+        border-bottom: none;
+    }
+    a:hover{
+        background-color: #E7F6FB !important;
+    }
+}

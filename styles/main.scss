@@ -6,5 +6,7 @@ body{
     background-color: #EFF3F6;
     margin: 0;
 }
+@import 'style';
 @import 'home';
-@import 'userProfile';
+@import 'headLessDropDown';
+@import 'profilepic';
