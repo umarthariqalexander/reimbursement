@@ -3,7 +3,8 @@ angular.module("reimbursement")
     return{
         scope:{
             letter: '=letter',
-            imageUrl: '=imageUrl'
+            imageUrl: '=imageUrl',
+            size: '='
         },
         templateUrl: "./scripts/directives/ProfilePic/index.html"
     }

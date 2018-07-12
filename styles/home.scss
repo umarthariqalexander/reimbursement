@@ -44,3 +44,30 @@
        font-size: 18px;
     }
 }
+.body-content{
+    max-width: 90%;
+    position: relative;
+    top: 155px;
+    min-height: calc(100vh - 158px);
+    margin: auto;
+    transition: 0.5s all;
+    .dashboard-profile-container{
+        border-radius: 4px;
+        margin-bottom: 24px;
+        position: relative;
+        padding: 20px 24px;
+        margin-left: 52px;
+        background-color: white;
+        .dashboard-name-section{
+            margin-left: 20px;
+            display: inline-block;
+            font-size: 24px;
+            font-weight: 300;
+            .text-ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+             }
+        }
+    }
+}

@@ -1,3 +1,3 @@
-<span class="profile-pic circle-md" ng-bind="letter">
+<span class="profile-pic" ng-class="{'circle-md': size === 'medium', 'circle-lg': size === 'large'}" ng-bind="letter">
     <img src="{{imageUrl}}" alt="">
 </span>
