@@ -8,13 +8,38 @@
     top: 66px;
     left: 0;
     background-color: #FFFFFF;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.15);
     transition: 0.5s left;
     ul{
         list-style: none;
         padding-left: 0px;
         li{
             padding:14px;
+            position: relative;
+            .left-nav-user-sub-menu{
+                position: absolute;
+                left: 52px;
+                width: 170px;
+                top: 0;
+                background-color: white;
+                display: none;
+                div{
+                    padding: 10px 12px;
+                    padding-left: 20px;
+                    background-color: $sub-menu-background-color;
+                    cursor: pointer;
+                    .submenu-text:hover{
+                        color: $sub-menu-active-color;
+                    }
+                }
+                div:first-child{
+                    background-color: $active-option-color;
+                    color: white;
+                    padding: 17.5px 20px;
+                    .submenu-text:hover{
+                        color: white;
+                    }
+                }
+            }
         }
         li:hover{
             background-color: $active-option-color;
@@ -24,6 +49,9 @@
             .icon-user-tie{
                 color: white;
             }
+        }
+        li:hover .left-nav-user-sub-menu{
+            display: inline-block;
         }
         li:nth-child(1):hover{
             background-color: white;
